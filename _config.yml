@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Site title
+title: PARK LAB
 tagline: Site tagline
 email: example@email.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -23,7 +23,7 @@ url: "http://example.com" # the base hostname & protocol for your site, e.g. htt
 permalink: pretty
 twitter_username: twitter_username
 github_username:  github_username
-favicon: favicon.ico
+favicon: favicon.svg
 author: Author
 twitter:
   username: twitter_username
@@ -31,7 +31,6 @@ twitter:
 
 # Build settings
 markdown: kramdown
-#theme: minima
 theme: bulma-clean-theme
 plugins:
   - jekyll-feed
@@ -54,8 +53,18 @@ paginate: 10
 paginate_path: "/news/page:num"
 
 collections:
-  products:
+  galleries:
     output: true
-    layout: product
+    layout: gallery
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+  people:
+    output: true
+    layout: person
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+  supplements:
+    output: true
+    layout: supplement
     image: https://via.placeholder.com/800x600
     show_sidebar: false
